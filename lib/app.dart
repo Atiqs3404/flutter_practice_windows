@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:untitled/class_3.dart';
 import 'package:untitled/home.dart';
+import 'package:untitled/module_8/module_8_class1.dart';
 
 class MyApp extends StatelessWidget {
   MyApp({super.key});
@@ -9,7 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Atiqs flutter app",
-      home: flutterClass3(),
+      home: Module8Class1(),
     );
   }
 }
