@@ -7,14 +7,14 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("This is an appbar title", style: TextStyle(
+        title: Text("This is an appbar title", style: TextStyle(
           color: Colors.white,
         )),
         centerTitle: true,
         backgroundColor: Colors.deepPurple,
       ),
       body:
-      const Column(
+      Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [

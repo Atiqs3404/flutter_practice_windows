@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:untitled/flutterClass3.dart';
+import 'package:untitled/class_3.dart';
+import 'package:untitled/home.dart';
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      title: "Atiq's Flutter App",
+    return MaterialApp(
+      title: "Atiqs flutter app",
       home: flutterClass3(),
     );
   }

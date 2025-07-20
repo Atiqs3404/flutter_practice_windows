@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class flutterClass3 extends StatelessWidget {
@@ -12,7 +11,7 @@ class flutterClass3 extends StatelessWidget {
       backgroundColor: Colors.grey.shade200,
       appBar: AppBar(
         backgroundColor: Colors.orange.withOpacity(0.7),
-        title: const Text(
+        title: Text(
           "Class 3",
           style: TextStyle(
             color: Colors.white,
@@ -30,17 +29,15 @@ class flutterClass3 extends StatelessWidget {
                 style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.orange.withOpacity(0.7),
                     foregroundColor: Colors.white,
-                    textStyle: const TextStyle(fontWeight: FontWeight.bold),
-                    shape: const RoundedRectangleBorder(
+                    textStyle: TextStyle(fontWeight: FontWeight.bold),
+                    shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.zero,
                     )),
                 onPressed: () {
-                  if (kDebugMode) {
-                    print("Clicked");
-                  }
+                  print("Clicked");
                 },
-                child: const Text("Submit")),
-            const SizedBox(
+                child: Text("Submit")),
+            SizedBox(
               height: 10,
             ),
             SizedBox(
@@ -50,42 +47,40 @@ class flutterClass3 extends StatelessWidget {
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.orange.withOpacity(0.7),
                     foregroundColor: Colors.white,
-                    textStyle: const TextStyle(fontWeight: FontWeight.bold),
+                    textStyle: TextStyle(fontWeight: FontWeight.bold),
                   ),
                   onPressed: () {
-                    if (kDebugMode) {
-                      print("Clicked");
-                    }
+                    print("Clicked");
                   },
-                  child: const Text("Submit")),
+                  child: Text("Submit")),
             ),
-            const SizedBox(
+            SizedBox(
               height: 10,
             ),
             OutlinedButton(
                 style: OutlinedButton.styleFrom(
                     backgroundColor: Colors.orange.withOpacity(0.7),
                     foregroundColor: Colors.white,
-                    textStyle: const TextStyle(
+                    textStyle: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 20,
                     )),
                 onPressed: () {},
-                child: const Text("Outline Button")),
-            const SizedBox(
+                child: Text("Outline Button")),
+            SizedBox(
               height: 10,
             ),
             TextButton(
                 style: TextButton.styleFrom(
                     backgroundColor: Colors.orange.withOpacity(0.7),
                     foregroundColor: Colors.white,
-                    textStyle: const TextStyle(
+                    textStyle: TextStyle(
                       fontSize: 30,
                       fontWeight: FontWeight.bold,
                     )),
                 onPressed: () {},
-                child: const Text("This is a text button")),
-            const SizedBox(
+                child: Text("This is a text button")),
+            SizedBox(
               height: 10,
             ),
             Icon(
@@ -95,44 +90,38 @@ class flutterClass3 extends StatelessWidget {
             ),
             IconButton(
                 onPressed: () {
-                  if (kDebugMode) {
-                    print("Item Deleted");
-                  }
+                  print("Item Deleted");
                 },
                 icon: Icon(Icons.delete_rounded,
                     size: 60, color: Colors.orange.withOpacity(0.7))),
-            const SizedBox(
+            SizedBox(
               height: 10,
             ),
             GestureDetector(
                 onLongPress: () {
-                  if (kDebugMode) {
-                    print("Long pressed with GestureDetector");
-                  }
+                  print("Long pressed with GestureDetector");
                 },
                 child: Text(
-                  "Non clickable to Long Clickable",
+                  "Non clickable to clickable",
                   style: TextStyle(
                       color: Colors.orange.withOpacity(0.7), fontSize: 25),
                 )),
             InkWell(
                 onDoubleTap: () {
-                  if (kDebugMode) {
-                    print("Double tapped with Inkwell");
-                  }
+                  print("Double tapped with Inkwell");
                 },
                 child: Text(
                   "Single tap to double tap",
                   style: TextStyle(
                       color: Colors.orange.withOpacity(0.7), fontSize: 25),
                 )),
-            const SizedBox(
+            SizedBox(
               height: 10,
             ),
             Padding(
               // padding: EdgeInsets.all(20),
               // padding: EdgeInsets.only(left: 20, right: 10, top: 5, bottom: 20),
-              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 30 ),
+              padding: EdgeInsets.symmetric(horizontal: 10, vertical: 30 ),
               child: Text("This is a padding text",
                   style: TextStyle(
                       color: Colors.orange.withOpacity(0.7), fontSize: 25)),
