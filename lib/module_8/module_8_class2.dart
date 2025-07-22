@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:untitled/module_8/class2_listview.dart';
 
 class Module8Class2 extends StatelessWidget {
-   Module8Class2({super.key});
+  Module8Class2({super.key});
 
   final _formKey = GlobalKey<FormState>();
   TextEditingController phoneController = TextEditingController();
@@ -99,9 +99,14 @@ class Module8Class2 extends StatelessWidget {
                           foregroundColor: Colors.white,
                         ),
                         onPressed: () {
-                          if(_formKey.currentState!.validate()){
+                          if (_formKey.currentState!.validate()) {
                             // ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Login Success")));
-                            Navigator.push(context, MaterialPageRoute(builder: (context) => ListV(name: phoneController.text,)));
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => ListV(
+                                          name: phoneController.text,
+                                        )));
                           }
                         },
                         child: Text("Login")),

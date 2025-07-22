@@ -17,18 +17,20 @@ class _ListVState extends State<ListV> {
         centerTitle: true,
       ),
       body: ListView.builder(
-        itemCount: 20,
-          itemBuilder: (context, index){
-        return Card(
-          child: ListTile(
-           leading: Icon(Icons.phone),
-            trailing: Icon(Icons.delete, color: Colors.red,),
-            title: Text("Atiq"),
-            subtitle: Text(widget.name),
-          ),
-        );
-      }),
+          itemCount: 20,
+          itemBuilder: (context, index) {
+            return Card(
+              child: ListTile(
+                leading: Icon(Icons.phone),
+                trailing: Icon(
+                  Icons.delete,
+                  color: Colors.red,
+                ),
+                title: Text("Atiq"),
+                subtitle: Text(widget.name),
+              ),
+            );
+          }),
     );
   }
 }
-

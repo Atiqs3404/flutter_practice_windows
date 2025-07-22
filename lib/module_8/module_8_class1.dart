@@ -103,26 +103,20 @@ class Module8Class1 extends StatelessWidget {
                   child: Text("Clear"))),
           SizedBox(height: 40),
           Container(
-            alignment: Alignment(1,0),
+            alignment: Alignment(1, 0),
             // When using box decoration color must be inside it
             decoration: BoxDecoration(
-              color: Colors.grey,
-              borderRadius: BorderRadius.circular(10),
-              border: Border.all(
-                width: 2,
-                color: Colors.black
-              ),
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.black.withOpacity(0.15),
-                  offset: Offset(10, 10)
-                )
-              ]
-            ),
+                color: Colors.grey,
+                borderRadius: BorderRadius.circular(10),
+                border: Border.all(width: 2, color: Colors.black),
+                boxShadow: [
+                  BoxShadow(
+                      color: Colors.black.withOpacity(0.15),
+                      offset: Offset(10, 10))
+                ]),
             height: 100,
             width: 200,
-            child: 
-              Text("This is a container"),
+            child: Text("This is a container"),
           ),
           SizedBox(height: 40),
         ],
