@@ -27,7 +27,7 @@ class Module8Class2 extends StatelessWidget {
             ),
             // Offline image
             Image.asset(
-              "asset/1.jpg",
+              "assets/1.jpg",
               width: 400,
               height: 200,
             ),
@@ -105,7 +105,7 @@ class Module8Class2 extends StatelessWidget {
                                 context,
                                 MaterialPageRoute(
                                     builder: (context) => ListV(
-                                          name: phoneController.text,
+                                          number: phoneController.text,
                                         )));
                           }
                         },
