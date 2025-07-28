@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class ListV extends StatefulWidget {
-  final name;
-  const ListV({super.key, required this.name});
+  final number;
+  const ListV({super.key, required this.number});
 
   @override
   State<ListV> createState() => _ListVState();
@@ -27,7 +27,7 @@ class _ListVState extends State<ListV> {
                   color: Colors.red,
                 ),
                 title: Text("Atiq"),
-                subtitle: Text(widget.name),
+                subtitle: Text(widget.number),
               ),
             );
           }),
