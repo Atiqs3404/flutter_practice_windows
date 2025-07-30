@@ -6,19 +6,33 @@ class OwnwidgetApplied extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    // Gives the current device display size
+    Size screenSize = MediaQuery.of(context).size;
+
     return Scaffold(
       appBar: AppBar(),
       body: Center(
-        child: Container(
-          child: Column(
+        child: SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Row(
             children: [
-              CityCard(imgURL: "assets/jad-limcaco-NT1mJPgni6A-unsplash.jpg", title: "Paris",),
-              SizedBox(height: 10,),
-              CityCard(imgURL: "assets/ted-bryan-yu-5mezpWin6T8-unsplash.jpg", title: "Dubai",),
-              SizedBox(height: 10,),
-              CityCard(imgURL: "assets/kharl-anthony-paica-7sqY83ONLMU-unsplash.jpg", title: "Bali",),
+              SizedBox(
+                  width: screenSize.width,
+                  height: 250,
+                  child: CityCard(imgURL: "assets/jamie-fenn-VZ1TWObS34s-unsplash.jpg", title: "Bali",)),
+              SizedBox(width: 10,),
+              SizedBox(
+                  width: screenSize.width,
+                  height: 250,
+                  child: CityCard(imgURL: "assets/jamie-fenn-VZ1TWObS34s-unsplash.jpg", title: "Paris",)),
+              SizedBox(width: 10,),
+              SizedBox(
+                  width: screenSize.width,
+                  height: 250,
+                  child: CityCard(imgURL: "assets/jamie-fenn-VZ1TWObS34s-unsplash.jpg", title: "Dubai",)),
             ],
-          )
+          ),
         ),
       ),
     );
