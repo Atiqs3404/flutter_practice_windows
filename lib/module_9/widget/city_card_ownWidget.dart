@@ -15,7 +15,7 @@ class CityCard extends StatelessWidget {
           child: Stack(
             children: [
               Image.asset(
-                "$imgURL",
+                imgURL,
                 fit: BoxFit.fill,
                 width: double.infinity,
                 height: 200,
@@ -29,11 +29,11 @@ class CityCard extends StatelessWidget {
           ),
         ),
         Positioned(
-          bottom: 10,
+          top: 160,
           left: 10,
-          child: Text("$title",
+          child: Text(title,
             style: TextStyle(
-              fontSize: 18,
+              fontSize: 20,
               fontWeight: FontWeight.bold,
               color: Colors.white,
             ),
