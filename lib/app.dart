@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:untitled/class_3.dart';
 import 'package:untitled/home.dart';
+import 'package:untitled/module_11/class_1.dart';
 import 'package:untitled/module_8/class2_listview.dart';
 import 'package:untitled/module_8/class3_stack.dart';
 import 'package:untitled/module_8/module_8_class1.dart';
@@ -70,9 +71,10 @@ class MyApp extends StatelessWidget {
       ),
 
       // Module 9 Class 3 topics (Navigation)
-      initialRoute: "/class3",
+      initialRoute: "/",
       routes: {
-        "/" : (context) => TravelUi(),
+        "/": (context) => Module11Class1(),
+        "/travelUI" : (context) => TravelUi(),
         "/class1" : (context) => Module9Class1Alert(),
         "/class2" : (context) => Module9Class2(),
         "/class3" : (context) => Module9Class3(),

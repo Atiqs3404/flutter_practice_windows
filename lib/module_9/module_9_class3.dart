@@ -18,27 +18,21 @@ class Module9Class3 extends StatelessWidget {
         child: Column(
           children: [
             ElevatedButton(
-                onPressed: () => Navigator.pushNamed(context, "/"),
+                onPressed: () => Navigator.pushNamed(context, "/travelUI"),
                 child: Text("Travel UI")),
 
             ElevatedButton(
-                onPressed: () {
-                  Navigator.pushNamed(context, "/class1");
-                },
+                onPressed: () => Navigator.pushNamed(context, "/class1"),
                 child: Text("Class 1")),
             ElevatedButton(
-                onPressed: () {
-                  Navigator.pushNamed(context, "/class2");
-                },
+                onPressed: () => Navigator.pushNamed(context, "/class2"),
                 child: Text("Class 2")),
 
             ElevatedButton(
-                onPressed: () {
-                  Navigator.pushNamed(context, "/ownWidget");
-                },
+                onPressed: () => Navigator.pushNamed(context, "/ownWidget"),
                 child: Text("ownWidget_applied")),
 
-            // Animation during page navigation
+            // Animation during page navigation (changing)
             ElevatedButton (
                 onPressed: () {
                    Navigator.push(context, PageRouteBuilder(
