@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:untitled/class_3.dart';
 import 'package:untitled/home.dart';
+import 'package:untitled/module_11/class_2/calculatorApp.dart';
 import 'package:untitled/module_11/class_1.dart';
 import 'package:untitled/module_8/class2_listview.dart';
 import 'package:untitled/module_8/class3_stack.dart';
@@ -38,7 +39,7 @@ class MyApp extends StatelessWidget {
         ),
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
-            backgroundColor: Colors.orange.shade400,
+            backgroundColor: Colors.orange,
             foregroundColor: Colors.black,
             textStyle: TextStyle(
               fontSize: 20,
@@ -50,7 +51,7 @@ class MyApp extends StatelessWidget {
           displayLarge: TextStyle(
             fontSize: 40,
             fontWeight: FontWeight.bold,
-            color: Colors.deepPurple
+            color: Colors.white
           )
         ),
         inputDecorationTheme: InputDecorationTheme(
@@ -71,7 +72,7 @@ class MyApp extends StatelessWidget {
       ),
 
       // Module 9 Class 3 topics (Navigation)
-      initialRoute: "/",
+      initialRoute: "/calculatorApp",
       routes: {
         "/": (context) => Module11Class1(),
         "/travelUI" : (context) => TravelUi(),
@@ -79,6 +80,7 @@ class MyApp extends StatelessWidget {
         "/class2" : (context) => Module9Class2(),
         "/class3" : (context) => Module9Class3(),
         "/ownWidget" : (context) => OwnwidgetApplied(),
+        "/calculatorApp" : (context) => Calculatorapp(),
       },
 
       // home: Module9Class3(),
