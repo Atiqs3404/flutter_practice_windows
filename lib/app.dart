@@ -14,6 +14,7 @@ import 'package:untitled/module_9/module_9_class3.dart';
 import 'package:untitled/module_9/ownWidget_applied.dart';
 import 'package:untitled/module_9/travel_UI.dart';
 
+import 'module_11/class_3/waterTracker.dart';
 import 'module_9/widget/city_card_ownWidget.dart';
 
 class MyApp extends StatelessWidget {
@@ -72,7 +73,7 @@ class MyApp extends StatelessWidget {
       ),
 
       // Module 9 Class 3 topics (Navigation)
-      initialRoute: "/calculatorApp",
+      initialRoute: "/waterTrackerApp",
       routes: {
         "/": (context) => Module11Class1(),
         "/travelUI" : (context) => TravelUi(),
@@ -81,6 +82,7 @@ class MyApp extends StatelessWidget {
         "/class3" : (context) => Module9Class3(),
         "/ownWidget" : (context) => OwnwidgetApplied(),
         "/calculatorApp" : (context) => Calculatorapp(),
+        "/waterTrackerApp": (context) => WaterTrackerApp(),
       },
 
       // home: Module9Class3(),
