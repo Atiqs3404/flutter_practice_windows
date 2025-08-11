@@ -67,9 +67,22 @@ class _CalculatorappState extends State<Calculatorapp> {
             child: Container(
               alignment: Alignment.bottomRight,
               padding: EdgeInsets.all(25),
-              child: Text(
-                _output,
-                style: TextStyle(fontSize: 50, color: Colors.white),
+              child:
+              Column(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  (_operator.isNotEmpty && _input.isNotEmpty) ? Text("$_num1 $_operator $_num2",
+                  style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.grey
+                  ),
+                  ) :
+                      SizedBox(),
+                  Text(
+                    _output,
+                    style: TextStyle(fontSize: 50, color: Colors.white),
+                  ),
+                ],
               ),
             ),
           ),
