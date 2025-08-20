@@ -3,6 +3,7 @@ import 'package:untitled/class_3.dart';
 import 'package:untitled/home.dart';
 import 'package:untitled/module_11/class_2/calculatorApp.dart';
 import 'package:untitled/module_11/class_1.dart';
+import 'package:untitled/module_12/class_1.dart';
 import 'package:untitled/module_8/class2_listview.dart';
 import 'package:untitled/module_8/class3_stack.dart';
 import 'package:untitled/module_8/module_8_class1.dart';
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget {
         brightness: Brightness.light,
         primaryColor: Colors.purple,
         primarySwatch: Colors.purple,
-        scaffoldBackgroundColor: Colors.teal .shade400,
+        scaffoldBackgroundColor: Colors.grey.shade200,
         appBarTheme: AppBarTheme(
           color: Colors.orange.shade400,
           titleTextStyle: TextStyle(
@@ -73,7 +74,7 @@ class MyApp extends StatelessWidget {
       ),
 
       // Module 9 Class 3 topics (Navigation)
-      initialRoute: "/waterTrackerApp",
+      initialRoute: "/moneyManagementApp",
       routes: {
         "/": (context) => Module11Class1(),
         "/travelUI" : (context) => TravelUi(),
@@ -83,6 +84,7 @@ class MyApp extends StatelessWidget {
         "/ownWidget" : (context) => OwnwidgetApplied(),
         "/calculatorApp" : (context) => Calculatorapp(),
         "/waterTrackerApp": (context) => WaterTrackerApp(),
+        "/moneyManagementApp": (context) => MoneyManagment(),
       },
 
       // home: Module9Class3(),
